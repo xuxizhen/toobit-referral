@@ -25,8 +25,8 @@ export default async function SafetyPage({ params }: { params: Promise<{ lang: s
         <p className="text-lg text-gray-400 text-center mb-12 max-w-3xl mx-auto">{t('safetyMetaDesc', lang)}</p>
 
         {/* Safety Confirmation */}
-        <div className="bg-gradient-to-r from-[#0B2E1B] to-[#0B0E11] rounded-2xl p-8 text-center mb-12 border border-green-900">
-          <p className="text-6xl font-bold text-[#00D26A] mb-2">✅</p>
+        <div className="bg-gradient-to-r from-[#0B1A2E] to-[#0B0E11] rounded-2xl p-8 text-center mb-12 border border-blue-800">
+          <p className="text-6xl font-bold text-[#2483FF] mb-2">✅</p>
           <p className="text-2xl font-bold">
             {lang === 'zh-cn' ? '是的，Toobit是安全的。' : lang === 'zh-tw' ? '是的，Toobit是安全的。' : lang === 'ja' ? 'はい、Toobitは安全です。' : lang === 'ko' ? '네, Toobit은 안전합니다.' : lang === 'es' ? 'Sí, Toobit es seguro.' : lang === 'ar' ? 'نعم، Toobit آمن.' : lang === 'fa' ? 'بله، Toobit امن است.' : 'Yes, Toobit is safe.'}
           </p>
@@ -84,7 +84,7 @@ export default async function SafetyPage({ params }: { params: Promise<{ lang: s
         </section>
 
         {/* CTA */}
-        <div className="text-center bg-gradient-to-r from-[#00D26A] to-emerald-600 rounded-2xl p-12">
+        <div className="text-center bg-gradient-to-r from-[#2483FF] to-blue-600 rounded-2xl p-12">
           <h2 className="text-3xl font-bold mb-4 text-black">{t('readyTitle', lang)}</h2>
           <p className="text-lg mb-8 text-black/80">{t('readyDescription', lang)}</p>
           <CTA lang={lang} variant="secondary" />

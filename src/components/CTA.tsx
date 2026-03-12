@@ -12,8 +12,8 @@ export default function CTA({ lang, text, variant = 'primary', className = '' }:
 
   const baseClasses = 'inline-block font-bold rounded-full transition-all duration-200 text-center';
   const variantClasses = variant === 'primary'
-    ? 'bg-[#00D26A] hover:bg-[#00B85C] text-black py-4 px-12 text-xl shadow-lg hover:shadow-xl transform hover:scale-105'
-    : 'bg-white hover:bg-gray-100 text-[#00D26A] py-4 px-12 text-lg';
+    ? 'bg-[#2483FF] hover:bg-[#1A6FE0] text-black py-4 px-12 text-xl shadow-lg hover:shadow-xl transform hover:scale-105'
+    : 'bg-white hover:bg-gray-100 text-[#2483FF] py-4 px-12 text-lg';
 
   return (
     <a

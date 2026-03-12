@@ -53,9 +53,9 @@ export default async function FeesPage({ params }: { params: Promise<{ lang: str
               </thead>
               <tbody>
                 {spotFees.map((fee, i) => (
-                  <tr key={i} className={i === 0 ? 'bg-[#0B2E1B] font-semibold' : 'border-b border-gray-800'}>
+                  <tr key={i} className={i === 0 ? 'bg-[#0B1A2E] font-semibold' : 'border-b border-gray-800'}>
                     <td className="p-4">{fee.tier}</td>
-                    <td className="p-4 text-[#00D26A]">{fee.maker}</td>
+                    <td className="p-4 text-[#2483FF]">{fee.maker}</td>
                     <td className="p-4">{fee.taker}</td>
                   </tr>
                 ))}
@@ -71,7 +71,7 @@ export default async function FeesPage({ params }: { params: Promise<{ lang: str
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-[#0B0E11] rounded-xl p-6 border border-gray-800">
                 <p className="text-sm text-gray-400 mb-1">{t('maker', lang)}</p>
-                <p className="text-3xl font-bold text-[#00D26A]">0.02%</p>
+                <p className="text-3xl font-bold text-[#2483FF]">0.02%</p>
               </div>
               <div className="bg-[#0B0E11] rounded-xl p-6 border border-gray-800">
                 <p className="text-sm text-gray-400 mb-1">{t('taker', lang)}</p>
@@ -85,11 +85,11 @@ export default async function FeesPage({ params }: { params: Promise<{ lang: str
         <section className="mb-12">
           <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">💰 {t('feesDepositTitle', lang)}</h2>
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-[#0B2E1B] rounded-2xl p-6 border border-green-900">
+            <div className="bg-[#0B1A2E] rounded-2xl p-6 border border-blue-800">
               <h3 className="font-bold text-lg mb-3">
                 {lang === 'zh-cn' ? '充值' : lang === 'zh-tw' ? '充值' : lang === 'ja' ? '入金' : lang === 'ko' ? '입금' : 'Deposits'}
               </h3>
-              <p className="text-3xl font-bold text-[#00D26A] mb-2">
+              <p className="text-3xl font-bold text-[#2483FF] mb-2">
                 {lang === 'zh-cn' ? '免费' : lang === 'zh-tw' ? '免費' : lang === 'ja' ? '無料' : lang === 'ko' ? '무료' : 'FREE'}
               </p>
               <p className="text-sm text-gray-400">
@@ -124,7 +124,7 @@ export default async function FeesPage({ params }: { params: Promise<{ lang: str
               </thead>
               <tbody>
                 {comparison.map((row, i) => (
-                  <tr key={i} className={row.highlight ? 'bg-[#0B2E1B] font-bold' : 'border-b border-gray-800'}>
+                  <tr key={i} className={row.highlight ? 'bg-[#0B1A2E] font-bold' : 'border-b border-gray-800'}>
                     <td className="p-4">{row.exchange} {row.highlight && '⭐'}</td>
                     <td className="p-4">{row.maker}</td>
                     <td className="p-4">{row.taker}</td>
@@ -136,7 +136,7 @@ export default async function FeesPage({ params }: { params: Promise<{ lang: str
         </section>
 
         {/* CTA */}
-        <div className="text-center bg-gradient-to-r from-[#00D26A] to-emerald-600 rounded-2xl p-12">
+        <div className="text-center bg-gradient-to-r from-[#2483FF] to-blue-600 rounded-2xl p-12">
           <h2 className="text-3xl font-bold mb-4 text-black">{t('readyTitle', lang)}</h2>
           <p className="text-lg mb-8 text-black/80">{t('readyDescription', lang)}</p>
           <CTA lang={lang} variant="secondary" />

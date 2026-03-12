@@ -37,8 +37,8 @@ export default async function ReferralPage({ params }: { params: Promise<{ lang:
         <p className="text-lg text-gray-400 text-center mb-12 max-w-3xl mx-auto">{t('referralMetaDesc', lang)}</p>
 
         {/* Commission Highlight */}
-        <div className="bg-gradient-to-r from-[#0B2E1B] to-[#0B0E11] rounded-2xl p-8 text-center mb-12 border border-green-900">
-          <p className="text-6xl font-bold text-[#00D26A] mb-2">10%</p>
+        <div className="bg-gradient-to-r from-[#0B1A2E] to-[#0B0E11] rounded-2xl p-8 text-center mb-12 border border-blue-800">
+          <p className="text-6xl font-bold text-[#2483FF] mb-2">10%</p>
           <p className="text-xl font-semibold">{t('referralEarn', lang)}</p>
           <p className="text-gray-400 mt-2">
             {lang === 'zh-cn' ? '终身享受您推荐人每笔交易的佣金' : lang === 'zh-tw' ? '終身享受您推薦人每筆交易的佣金' : lang === 'ja' ? '紹介者の取引に対して永続的にコミッションを獲得' : lang === 'ko' ? '추천인의 모든 거래에서 평생 커미션' : 'On every trade your referrals make — for life'}
@@ -51,11 +51,11 @@ export default async function ReferralPage({ params }: { params: Promise<{ lang:
           <div className="space-y-8">
             {howItWorks.map((item) => (
               <div key={item.step} className="flex gap-6 items-start">
-                <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-r from-[#00D26A] to-emerald-500 rounded-full flex items-center justify-center text-2xl">
+                <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-r from-[#2483FF] to-blue-500 rounded-full flex items-center justify-center text-2xl">
                   {item.icon}
                 </div>
                 <div className="flex-1">
-                  <span className="text-sm font-bold text-[#00D26A] bg-[#0B2E1B] px-3 py-1 rounded-full">
+                  <span className="text-sm font-bold text-[#2483FF] bg-[#0B1A2E] px-3 py-1 rounded-full">
                     {lang === 'zh-cn' || lang === 'zh-tw' ? `第${item.step}步` : lang === 'ja' ? `ステップ ${item.step}` : lang === 'ko' ? `${item.step}단계` : `Step ${item.step}`}
                   </span>
                   <h3 className="text-xl font-bold mt-2 mb-2">{item.title[lang as keyof typeof item.title] || item.title.en}</h3>
@@ -84,7 +84,7 @@ export default async function ReferralPage({ params }: { params: Promise<{ lang:
         </section>
 
         {/* CTA */}
-        <div className="text-center bg-gradient-to-r from-[#00D26A] to-emerald-600 rounded-2xl p-12">
+        <div className="text-center bg-gradient-to-r from-[#2483FF] to-blue-600 rounded-2xl p-12">
           <h2 className="text-3xl font-bold mb-4 text-black">{t('readyTitle', lang)}</h2>
           <p className="text-lg mb-8 text-black/80">{t('readyDescription', lang)}</p>
           <CTA lang={lang} variant="secondary" />

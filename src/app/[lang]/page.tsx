@@ -40,7 +40,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
       <section className="bg-gradient-to-b from-[#0B0E11] to-[#131722] py-20">
         <div className="container mx-auto px-4 text-center max-w-4xl">
           <h1 className="text-5xl md:text-6xl font-bold mb-4">
-            {t('title', lang)} <span className="text-[#00D26A]">Exchange</span>
+            {t('title', lang)} <span className="text-[#2483FF]">Exchange</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-6">{t('subtitle', lang)}</p>
           <p className="text-gray-400 mb-10 max-w-2xl mx-auto">{t('heroDescription', lang)}</p>
@@ -69,7 +69,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
           <p className="text-gray-400 text-center mb-12 max-w-2xl mx-auto">{t('whyDesc', lang)}</p>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {features.map((f, i) => (
-              <div key={i} className="bg-[#1A1D26] rounded-2xl p-6 hover:border-[#00D26A] border border-gray-800 transition-colors">
+              <div key={i} className="bg-[#1A1D26] rounded-2xl p-6 hover:border-[#2483FF] border border-gray-800 transition-colors">
                 <div className="text-4xl mb-4">{f.icon}</div>
                 <h3 className="font-bold text-lg mb-2">{t(f.titleKey, lang)}</h3>
                 <p className="text-sm text-gray-400">{t(f.descKey, lang)}</p>
@@ -82,7 +82,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
       {/* Bottom CTA */}
       <section className="py-16">
         <div className="container mx-auto px-4 max-w-4xl">
-          <div className="text-center bg-gradient-to-r from-[#00D26A] to-emerald-600 rounded-2xl p-12">
+          <div className="text-center bg-gradient-to-r from-[#2483FF] to-blue-600 rounded-2xl p-12">
             <h2 className="text-3xl font-bold mb-4 text-black">{t('readyTitle', lang)}</h2>
             <p className="text-lg mb-8 text-black/80">{t('readyDescription', lang)}</p>
             <CTA lang={lang} variant="secondary" />

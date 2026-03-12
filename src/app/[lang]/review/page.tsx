@@ -45,7 +45,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ lang: s
             <div className="grid md:grid-cols-2 gap-3">
               {['Spot Trading', 'Futures (150x)', 'Copy Trading', 'Demo Trading', 'Multiple Payment Methods', 'Mobile App'].map((feature) => (
                 <div key={feature} className="flex items-center gap-2 bg-[#0B0E11] rounded-lg p-3 border border-gray-800">
-                  <span className="text-[#00D26A]">✓</span>
+                  <span className="text-[#2483FF]">✓</span>
                   <span className="text-sm font-medium">{feature}</span>
                 </div>
               ))}
@@ -56,8 +56,8 @@ export default async function ReviewPage({ params }: { params: Promise<{ lang: s
         {/* Pros & Cons */}
         <section className="mb-12">
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-[#0B2E1B] rounded-2xl p-6 border border-green-900">
-              <h3 className="text-xl font-bold mb-4 text-[#00D26A]">✅ {t('reviewPros', lang)}</h3>
+            <div className="bg-[#0B1A2E] rounded-2xl p-6 border border-blue-800">
+              <h3 className="text-xl font-bold mb-4 text-[#2483FF]">✅ {t('reviewPros', lang)}</h3>
               <ul className="space-y-2">
                 {[
                   { en: 'Intuitive and user-friendly interface', 'zh-cn': '直观易用的界面', 'zh-tw': '直觀易用的介面', ja: '直感的で使いやすいインターフェース', ko: '직관적이고 사용자 친화적인 인터페이스face' },
@@ -88,13 +88,13 @@ export default async function ReviewPage({ params }: { params: Promise<{ lang: s
         {/* Verdict */}
         <section className="mb-12">
           <h2 className="text-2xl font-bold mb-4">🏆 {t('reviewVerdict', lang)}</h2>
-          <div className="bg-gradient-to-r from-[#1A1D26] to-[#0B2E1B] rounded-2xl p-6 border border-gray-800">
+          <div className="bg-gradient-to-r from-[#1A1D26] to-[#0B1A2E] rounded-2xl p-6 border border-gray-800">
             <p className="text-gray-300 leading-relaxed text-lg">{t('reviewVerdictDesc', lang)}</p>
           </div>
         </section>
 
         {/* CTA */}
-        <div className="text-center bg-gradient-to-r from-[#00D26A] to-emerald-600 rounded-2xl p-12">
+        <div className="text-center bg-gradient-to-r from-[#2483FF] to-blue-600 rounded-2xl p-12">
           <h2 className="text-3xl font-bold mb-4 text-black">{t('readyTitle', lang)}</h2>
           <p className="text-lg mb-8 text-black/80">{t('readyDescription', lang)}</p>
           <CTA lang={lang} variant="secondary" />

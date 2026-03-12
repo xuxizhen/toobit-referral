@@ -27,7 +27,7 @@ export default function LanguageSwitcher({ currentLang }: LanguageSwitcherProps)
       value={currentLang}
       onChange={handleChange}
       dir={isRTL ? 'rtl' : 'ltr'}
-      className="px-4 py-2 rounded-lg border border-gray-700 bg-[#1A1D26] text-white text-sm font-medium focus:outline-none focus:ring-2 focus:ring-[#00D26A] focus:border-transparent"
+      className="px-4 py-2 rounded-lg border border-gray-700 bg-[#1A1D26] text-white text-sm font-medium focus:outline-none focus:ring-2 focus:ring-[#2483FF] focus:border-transparent"
     >
       {supportedLanguages.map((lang) => (
         <option key={lang} value={lang}>

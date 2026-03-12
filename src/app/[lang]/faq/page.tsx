@@ -79,7 +79,7 @@ export default async function FAQPage({ params }: { params: Promise<{ lang: stri
           {faqs.map((faq, i) => (
             <div key={i} className="bg-[#1A1D26] rounded-2xl p-6 border border-gray-800">
               <h2 className="text-lg font-bold mb-3 flex items-start gap-2">
-                <span className="text-[#00D26A] flex-shrink-0">Q{i + 1}.</span>
+                <span className="text-[#2483FF] flex-shrink-0">Q{i + 1}.</span>
                 {faq.q[lang] || faq.q.en}
               </h2>
               <p className="text-gray-400 leading-relaxed pl-8">{faq.a[lang] || faq.a.en}</p>
@@ -87,7 +87,7 @@ export default async function FAQPage({ params }: { params: Promise<{ lang: stri
           ))}
         </div>
 
-        <div className="text-center bg-gradient-to-r from-[#00D26A] to-emerald-600 rounded-2xl p-12">
+        <div className="text-center bg-gradient-to-r from-[#2483FF] to-blue-600 rounded-2xl p-12">
           <h2 className="text-3xl font-bold mb-4 text-black">{t('readyTitle', lang)}</h2>
           <p className="text-lg mb-8 text-black/80">{t('readyDescription', lang)}</p>
           <CTA lang={lang} variant="secondary" />

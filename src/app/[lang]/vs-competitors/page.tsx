@@ -71,7 +71,7 @@ export default async function VsCompetitorsPage({ params }: { params: Promise<{ 
               <thead>
                 <tr className="bg-[#1A1D26]">
                   <th className="text-left p-4 font-semibold">Feature</th>
-                  <th className="text-left p-4 font-semibold text-[#00D26A]">Toobit ⭐</th>
+                  <th className="text-left p-4 font-semibold text-[#2483FF]">Toobit ⭐</th>
                   <th className="text-left p-4 font-semibold">Bitunix</th>
                   <th className="text-left p-4 font-semibold">BingX</th>
                   <th className="text-left p-4 font-semibold">MEXC</th>
@@ -81,7 +81,7 @@ export default async function VsCompetitorsPage({ params }: { params: Promise<{ 
                 {comparisonRows.map((row, i) => (
                   <tr key={i} className="border-b border-gray-800">
                     <td className="p-4 text-sm font-medium">{row.feature[lang as keyof typeof row.feature] || row.feature.en}</td>
-                    <td className="p-4 text-sm text-[#00D26A] font-semibold bg-[#0B2E1B]/30">{row.toobit}</td>
+                    <td className="p-4 text-sm text-[#2483FF] font-semibold bg-[#0B1A2E]/30">{row.toobit}</td>
                     <td className="p-4 text-sm">{row.bitunix}</td>
                     <td className="p-4 text-sm">{row.bingx}</td>
                     <td className="p-4 text-sm">{row.mexc}</td>
@@ -96,11 +96,11 @@ export default async function VsCompetitorsPage({ params }: { params: Promise<{ 
         <section className="mb-12 space-y-8">
           {detailedComparisons.map((comp, i) => (
             <div key={i} className="bg-[#1A1D26] rounded-2xl p-6 border border-gray-800">
-              <h2 className="text-xl font-bold mb-4 text-[#00D26A]">⚔️ {comp.title}</h2>
+              <h2 className="text-xl font-bold mb-4 text-[#2483FF]">⚔️ {comp.title}</h2>
               <ul className="space-y-2">
                 {comp.points.map((point, j) => (
                   <li key={j} className="text-sm text-gray-300 flex items-start gap-2">
-                    <span className="text-[#00D26A] mt-0.5">•</span>
+                    <span className="text-[#2483FF] mt-0.5">•</span>
                     {point[lang as keyof typeof point] || point.en}
                   </li>
                 ))}
@@ -112,13 +112,13 @@ export default async function VsCompetitorsPage({ params }: { params: Promise<{ 
         {/* Verdict */}
         <section className="mb-12">
           <h2 className="text-2xl font-bold mb-4">🏆 {t('vsVerdict', lang)}</h2>
-          <div className="bg-gradient-to-r from-[#1A1D26] to-[#0B2E1B] rounded-2xl p-6 border border-gray-800">
+          <div className="bg-gradient-to-r from-[#1A1D26] to-[#0B1A2E] rounded-2xl p-6 border border-gray-800">
             <p className="text-gray-300 leading-relaxed text-lg">{t('vsVerdictDesc', lang)}</p>
           </div>
         </section>
 
         {/* CTA */}
-        <div className="text-center bg-gradient-to-r from-[#00D26A] to-emerald-600 rounded-2xl p-12">
+        <div className="text-center bg-gradient-to-r from-[#2483FF] to-blue-600 rounded-2xl p-12">
           <h2 className="text-3xl font-bold mb-4 text-black">{t('readyTitle', lang)}</h2>
           <p className="text-lg mb-8 text-black/80">{t('readyDescription', lang)}</p>
           <CTA lang={lang} variant="secondary" />

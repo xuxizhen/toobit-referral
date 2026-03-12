@@ -42,11 +42,11 @@ export default async function TutorialPage({ params }: { params: Promise<{ lang:
         <div className="space-y-8 mb-12">
           {steps.map((step) => (
             <div key={step.number} className="flex gap-6 items-start">
-              <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-r from-[#00D26A] to-emerald-500 rounded-full flex items-center justify-center text-2xl">
+              <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-r from-[#2483FF] to-blue-500 rounded-full flex items-center justify-center text-2xl">
                 {step.icon}
               </div>
               <div className="flex-1">
-                <span className="text-sm font-bold text-[#00D26A] bg-[#0B2E1B] px-3 py-1 rounded-full">
+                <span className="text-sm font-bold text-[#2483FF] bg-[#0B1A2E] px-3 py-1 rounded-full">
                   {lang === 'zh-cn' || lang === 'zh-tw' ? `第${step.number}步` : lang === 'ja' ? `ステップ ${step.number}` : lang === 'ko' ? `${step.number}단계` : `Step ${step.number}`}
                 </span>
                 <h3 className="text-xl font-bold mt-2 mb-2">{step.title}</h3>
@@ -57,7 +57,7 @@ export default async function TutorialPage({ params }: { params: Promise<{ lang:
         </div>
 
         {/* CTA */}
-        <div className="text-center bg-gradient-to-r from-[#00D26A] to-emerald-600 rounded-2xl p-12">
+        <div className="text-center bg-gradient-to-r from-[#2483FF] to-blue-600 rounded-2xl p-12">
           <h2 className="text-3xl font-bold mb-4 text-black">{t('readyTitle', lang)}</h2>
           <p className="text-lg mb-8 text-black/80">{t('readyDescription', lang)}</p>
           <CTA lang={lang} variant="secondary" />
