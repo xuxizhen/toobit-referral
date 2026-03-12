@@ -17,7 +17,7 @@ export default function CTA({ lang, text, variant = 'primary', className = '' }:
 
   return (
     <a
-      href="https://www.toobit.com/zh-TW/r?i=IMxSSO"
+      href="https://www.toobit.com/r?i=IMxSSO"
       className={`${baseClasses} ${variantClasses} ${className}`}
       target="_blank"
       rel="noopener noreferrer"

@@ -99,7 +99,7 @@ export default async function LangLayout({
         <div className="container mx-auto px-4 py-3 flex items-center justify-between">
           <Link href={`/${lang}`} className="flex items-center gap-2">
             <span className="font-bold text-lg text-white">
-              Too<span className="text-[#2483FF]">bit</span>
+              Too<span className="text-[#2483FF]">bit</span> <span className="text-gray-500 font-normal text-sm">Referral</span>
             </span>
           </Link>
           <div className="flex items-center gap-1 overflow-x-auto">
