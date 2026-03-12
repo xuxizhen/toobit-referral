@@ -1,0 +1,28 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.toobit.guru/sitemap.xml
+
+# Googlebot
+User-agent: Googlebot
+Allow: /
+
+# Bingbot
+User-agent: Bingbot
+Allow: /
+
+# Slurp (Yahoo)
+User-agent: Slurp
+Allow: /
+
+# YandexBot
+User-agent: YandexBot
+Allow: /
+
+# Baiduspider
+User-agent: Baiduspider
+Allow: /
+
+# DuckDuckBot
+User-agent: DuckDuckBot
+Allow: /
