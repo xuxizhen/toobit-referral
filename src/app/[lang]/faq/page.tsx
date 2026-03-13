@@ -42,7 +42,7 @@ const faqs: FAQItem[] = [
   },
   {
     q: { en: 'How does the referral program work?', 'zh-cn': '推荐计划如何运作？', 'zh-tw': '推薦計劃如何運作？', ja: '紹介プログラムはどのように機能しますか？', ko: '추천 프로그램은 어떻게 작동하나요?' },
-    a: { en: 'When you register through a referral link, you receive a 10% trading fee commission rebate. You also get your own referral code to share with friends, earning 10% of their trading fees automatically.', 'zh-cn': '通过邀请链接注册后，您将获得10%交易手续费佣金返还。您还会获得自己的邀请码，与朋友分享后自动获得他们交易手续费的10%。', 'zh-tw': '通過邀請連結註冊後，您將獲得10%交易手續費佣金返還。您還會獲得自己的邀請碼，與朋友分享後自動獲得他們交易手續費的10%。', ja: '紹介リンクで登録すると、取引手数料の10%コミッションリベートを受け取ります。友人と共有できる自分の紹介コードも取得できます。', ko: '추천 링크로 가입하면 거래 수수료 10% 커미션 리베이트를 받습니다. 친구와 공유할 수 있는 자신의 추천 코드도 받게 됩니다.' },
+    a: { en: 'When you register through a referral link, you receive a 5% trading fee commission rebate. You also get your own referral code to share with friends, earning 5% of their trading fees automatically.', 'zh-cn': '通过邀请链接注册后，您将获得5%交易手续费佣金返还。您还会获得自己的邀请码，与朋友分享后自动获得他们交易手续费的5%。', 'zh-tw': '通過邀請連結註冊後，您將獲得5%交易手續費佣金返還。您還會獲得自己的邀請碼，與朋友分享後自動獲得他們交易手續費的5%。', ja: '紹介リンクで登録すると、取引手数料の5%コミッションリベートを受け取ります。友人と共有できる自分の紹介コードも取得できます。', ko: '추천 링크로 가입하면 거래 수수료 5% 커미션 리베이트를 받습니다. 친구와 공유할 수 있는 자신의 추천 코드도 받게 됩니다.' },
   },
   {
     q: { en: 'What deposit methods are available?', 'zh-cn': '有哪些充值方式？', 'zh-tw': '有哪些充值方式？', ja: 'どのような入金方法がありますか？', ko: '어떤 입금 방법이 있나요?' },

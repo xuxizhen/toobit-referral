@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Toobit - Register & Trade Crypto with 10% Referral Bonus",
-  description: "Join Toobit crypto exchange and get exclusive newbie rewards plus up to 10% referral commission. Trade crypto with low fees, fast execution, and multi-language support. Register now!",
+  title: "Toobit - Register & Trade Crypto with 5% Referral Bonus",
+  description: "Join Toobit crypto exchange and get exclusive newbie rewards plus up to 5% referral commission. Trade crypto with low fees, fast execution, and multi-language support. Register now!",
   keywords: "Toobit exchange, crypto trading, referral bonus, cryptocurrency, Bitcoin, Ethereum, trading platform, crypto exchange, blockchain, low fees",
   authors: [{ name: "Toobit" }],
   robots: "index, follow",
@@ -24,8 +24,8 @@ export const metadata: Metadata = {
     canonical: "https://www.toobit.guru",
   },
   openGraph: {
-    title: "Toobit - Register & Trade Crypto with 10% Referral Bonus",
-    description: "Join Toobit crypto exchange and get exclusive newbie rewards plus up to 10% referral commission. Trade crypto with low fees, fast execution, and multi-language support.",
+    title: "Toobit - Register & Trade Crypto with 5% Referral Bonus",
+    description: "Join Toobit crypto exchange and get exclusive newbie rewards plus up to 5% referral commission. Trade crypto with low fees, fast execution, and multi-language support.",
     url: "https://www.toobit.guru/",
     siteName: "Toobit Referral",
     images: [
@@ -41,8 +41,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Toobit - Register & Trade Crypto with 10% Referral Bonus",
-    description: "Join Toobit crypto exchange and get exclusive newbie rewards plus up to 10% referral commission.",
+    title: "Toobit - Register & Trade Crypto with 5% Referral Bonus",
+    description: "Join Toobit crypto exchange and get exclusive newbie rewards plus up to 5% referral commission.",
     images: ["https://www.toobit.guru/og-image.jpg"]
   }
 };

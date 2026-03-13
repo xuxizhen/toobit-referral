@@ -43,7 +43,7 @@ export default async function VsCompetitorsPage({ params }: { params: Promise<{ 
       points: [
         { en: 'Both offer copy trading feature', 'zh-cn': '两者都提供跟单交易功能', ja: '両方ともコピートレード機能を提供' },
         { en: 'Similar fee structures', 'zh-cn': '费用结构相似', ja: '類似の手数料体系' },
-        { en: 'Toobit has competitive 10% referral program', 'zh-cn': 'Toobit具有10%邀请返佣计划', ja: 'Toobitには10%紹介プログラムあり' },
+        { en: 'Toobit has competitive 5% referral program', 'zh-cn': 'Toobit具有5%邀请返佣计划', ja: 'Toobitには5%紹介プログラムあり' },
         { en: 'BingX has larger established user base', 'zh-cn': 'BingX拥有更大的现有用户群', ja: 'BingXはより大きな既存ユーザーベース' },
       ],
     },

@@ -20,7 +20,7 @@ export default async function TutorialPage({ params }: { params: Promise<{ lang:
 
   const steps = [
     { number: 1, title: t('tutorialStep1', lang), icon: '🔗',
-      description: { en: 'Click our exclusive referral link below to open the Toobit registration page. This ensures you automatically receive the 10% trading fee bonus.', 'zh-cn': '点击下方我们的专属邀请链接，打开Toobit注册页面。这确保您自动获得10%交易手续费奖励。', 'zh-tw': '點擊下方我們的專屬邀請連結，打開Toobit註冊頁面。這確保您自動獲得10%交易手續費獎勵。', ja: '下の専用紹介リンクをクリックしてToobitの登録ページを開きます。10%取引手数料ボーナスが自動的に適用されます。', ko: '아래의 전용 추천 링크를 클릭하여 Toobit 등록 페이지를 엽니다. 10% 거래 수수료 보너스가 자동 적용됩니다.' } },
+      description: { en: 'Click our exclusive referral link below to open the Toobit registration page. This ensures you automatically receive the 5% trading fee bonus.', 'zh-cn': '点击下方我们的专属邀请链接，打开Toobit注册页面。这确保您自动获得5%交易手续费奖励。', 'zh-tw': '點擊下方我們的專屬邀請連結，打開Toobit註冊頁面。這確保您自動獲得5%交易手續費獎勵。', ja: '下の専用紹介リンクをクリックしてToobitの登録ページを開きます。5%取引手数料ボーナスが自動的に適用されます。', ko: '아래의 전용 추천 링크를 클릭하여 Toobit 등록 페이지를 엽니다. 5% 거래 수수료 보너스가 자동 적용됩니다.' } },
     { number: 2, title: t('tutorialStep2', lang), icon: '📧',
       description: { en: 'Enter your email address or phone number in the registration form. You will receive a verification code to confirm your identity.', 'zh-cn': '在注册表单中输入您的电子邮件地址或手机号码。您将收到一个验证码来确认您的身份。', 'zh-tw': '在註冊表單中輸入您的電子郵件地址或手機號碼。您將收到一個驗證碼來確認您的身份。', ja: '登録フォームにメールアドレスまたは電話番号を入力します。確認コードが送信されます。', ko: '등록 양식에 이메일 주소 또는 전화번호를 입력하세요. 확인 코드를 받게 됩니다.' } },
     { number: 3, title: t('tutorialStep3', lang), icon: '🔒',
@@ -30,7 +30,7 @@ export default async function TutorialPage({ params }: { params: Promise<{ lang:
     { number: 5, title: t('tutorialStep5', lang), icon: '💰',
       description: { en: 'Deposit crypto from another wallet or exchange. Toobit supports all major cryptocurrencies with zero deposit fees.', 'zh-cn': '从其他钱包或交易所充值加密货币。Toobit支持所有主要加密货币，充值零手续费。', 'zh-tw': '從其他錢包或交易所充值加密貨幣。Toobit支持所有主要加密貨幣，充值零手續費。', ja: '他のウォレットや取引所から暗号通貨を入金します。入金手数料はゼロです。', ko: '다른 지갑이나 거래소에서 암호화폐를 입금하세요. 입금 수수료는 무료입니다.' } },
     { number: 6, title: t('tutorialStep6', lang), icon: '🎉',
-      description: { en: 'You\'re all set! Start trading spot, futures, or use copy trading to follow top traders. Enjoy your 10% fee discount on every trade.', 'zh-cn': '一切准备就绪！开始现货交易、合约交易，或使用跟单交易跟随顶级交易者。每笔交易享受10%手续费折扣。', 'zh-tw': '一切準備就緒！開始現貨交易、合約交易，或使用跟單交易跟隨頂級交易者。每筆交易享受10%手續費折扣。', ja: '準備完了です！スポット、先物取引やコピートレードを始めましょう。10%の手数料割引をお楽しみください。', ko: '모든 준비가 완료되었습니다! 현물, 선물 거래 또는 카피 트레이딩을 시작하세요. 10% 수수료 할인을 즐기세요.' } },
+      description: { en: 'You\'re all set! Start trading spot, futures, or use copy trading to follow top traders. Enjoy your 5% fee discount on every trade.', 'zh-cn': '一切准备就绪！开始现货交易、合约交易，或使用跟单交易跟随顶级交易者。每笔交易享受5%手续费折扣。', 'zh-tw': '一切準備就緒！開始現貨交易、合約交易，或使用跟單交易跟隨頂級交易者。每筆交易享受5%手續費折扣。', ja: '準備完了です！スポット、先物取引やコピートレードを始めましょう。5%の手数料割引をお楽しみください。', ko: '모든 준비가 완료되었습니다! 현물, 선물 거래 또는 카피 트레이딩을 시작하세요. 5% 수수료 할인을 즐기세요.' } },
   ];
 
   return (
