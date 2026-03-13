@@ -119,6 +119,12 @@ export default async function LangLayout({
         </div>
       </nav>
       {children}
+      {/* Footer */}
+      <footer className="bg-[#0B0E11] border-t border-gray-800 py-6 mt-12">
+        <div className="container mx-auto px-4 text-center text-sm text-gray-500">
+          © 2026 Toobit Referral — Not affiliated with Toobit.com
+        </div>
+      </footer>
     </div>
   );
 }
